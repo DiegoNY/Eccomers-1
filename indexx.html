@@ -53,11 +53,11 @@
                 </li>
     
                 <li>
-                    <a href="/">My Account</a>
+                    <a href="myAccountEdit.html">My Account</a>
                 </li>
     
                 <li>
-                    <a href="/">Sign Out</a>
+                    <a href="myAccount.html">Sign Out</a>
                 </li>
             </ul>
         </div>  
@@ -92,10 +92,25 @@
             </ul>
             <ul>
                 <li><a href="/" class="email">platzi@example.com</a></li>
-                <li><a href="/" class="sing-out">Sing out</a></li>
+                <li><a href="myAccount.html" class="sing-out">Sing out</a></li>
             </ul>
         </div>
     </nav>
+    <div class="login ">
+        <div class="form-container">
+            <h1 class="title">My account</h1>
+            <form action="/" class="form">
+                <div>
+                <label for="password" class="label">Name</label>
+                <input type="text" id="name" placeholder="Diego" class="input input-name">
+                <label for="email" class="label">Email</label>
+                <input type="text" id="email" placeholder="email@xample.com" class="input input-email">
+                <label for="password" class="label">Password</label>
+                <input type="password" id="pasword" placeholder="*********" class="input input-password">
+                </div>
+                <input type="submit" value="create" class="primary-button login-button">
+            </form>
+        </div>
     <script src="main.js"></script>
 </body>
 </html>
