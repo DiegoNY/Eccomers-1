@@ -12,5 +12,6 @@ function toggleDestokMenu(){
 }
 
 function toggleMobileMenu(){
-
+    menuMobile.classList.toggle('inactive');
 }
+
