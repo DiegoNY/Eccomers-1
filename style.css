@@ -317,22 +317,32 @@ width: 100px;
     margin-bottom: 30px;
 }
 /*Agregando estilos de  Carrito*/
+aside{
+    position: absolute;
+    right: 0;
+    top: 60px;
+    right: 10px;
+}
 .car{
     box-sizing: border-box;
     position: absolute;
     right: 0;
+    padding: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--very-light-pink);
+    border-radius: 15px;
 }
 .product-detail{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
-.title{
+.title-car{
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
 }
-.title figure img {
+.title-car figure img {
     transform: rotate(180deg);
     margin-right: 14px;
 }
@@ -340,12 +350,12 @@ width: 100px;
 .conten-order-car{
     display: grid;
     grid-template-rows: auto 1fr auto;
-    width: 300px;
+    
 }
 .orders{
     display: grid;
     grid-template-columns: auto 1fr auto;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
     gap: 34px;
 }
 
@@ -363,8 +373,16 @@ width: 100px;
 .orders p:nth-child(2){
     font-size: var(--md) ;
     font-weight: bold;
+    color: var(--very-light-pink);
+}
+.orders p:nth-child(3){
+    font-weight: bolder;
+    font-size: var(--md);
 }
 
+.container-bottom{
+    text-align: center;
+}
 .btn-checkout{
     width: 280px;
     height: 50px;
@@ -374,8 +392,10 @@ width: 100px;
     cursor: pointer;
     color: var(--white);  
     font-size: var(--md);  
-    font-weight: bold;      
+    font-weight: bold;  
+    margin-left: 12px;    
 }
+
 
 /*responsive :o*/
 /*para que el logo aparezca cuando la pantalla sea menor a 640 px :o*/
@@ -391,7 +411,24 @@ width: 100px;
     .form-container{
         height: 100%;
     }
-    .product-detail{
-        width: 100%;
+   aside{
+    width: 100%;
+    height: 100vh;
+    position: inherit;
+
+   }
+   .car{
+    position: inherit;
+    border: none;
+    height: 100vh;
+   }
+   .product-detail{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    .container-bottom{
+        
     }
 }
