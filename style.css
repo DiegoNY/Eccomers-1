@@ -316,6 +316,67 @@ width: 100px;
     /*margen alrededor de las cajas*/
     margin-bottom: 30px;
 }
+/*Agregando estilos de  Carrito*/
+.car{
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+}
+.product-detail{
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+.title figure img {
+    transform: rotate(180deg);
+    margin-right: 14px;
+}
+
+.conten-order-car{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+.orders{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-bottom: 24px;
+    gap: 34px;
+}
+
+.orders figure{
+   margin: 0;
+}
+
+.orders figure img{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.orders p:nth-child(2){
+    font-size: var(--md) ;
+    font-weight: bold;
+}
+
+.btn-checkout{
+    width: 280px;
+    height: 50px;
+    border: none;
+    border-radius: 22px;  
+    background-color: var(--hospital-green);
+    cursor: pointer;
+    color: var(--white);  
+    font-size: var(--md);  
+    font-weight: bold;      
+}
+
 /*responsive :o*/
 /*para que el logo aparezca cuando la pantalla sea menor a 640 px :o*/
 @media(max-width:640px){
@@ -329,5 +390,8 @@ width: 100px;
     }
     .form-container{
         height: 100%;
+    }
+    .product-detail{
+        width: 100%;
     }
 }
