@@ -138,14 +138,14 @@ width: 100px;
     padding: 24px; 
     position:absolute;
     top: 60px;
-    
+    background-color: var(--white);
 }
 .mobile-menu a {
     color: black;
     text-decoration: none;
     font-weight: bold;
     /* margin-bottom: 24px; */
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
 
 }
 .mobile-menu ul {
@@ -319,11 +319,13 @@ width: 100px;
 /*Agregando estilos de  Carrito*/
 aside{
     position: absolute;
+   
     right: 0;
     top: 60px;
     right: 10px;
 }
 .car{
+    height: 65vh;
     box-sizing: border-box;
     position: absolute;
     right: 0;
@@ -427,8 +429,5 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    }
-    .container-bottom{
-        
-    }
+    } 
 }

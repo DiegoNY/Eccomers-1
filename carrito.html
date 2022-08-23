@@ -28,83 +28,114 @@
             font-family: 'Quicksand', sans-serif;
         }
        
-        .car{
-            box-sizing: border-box;
-            position: absolute;
-            right: 0;
-            padding: 45px;
-        }
-        .product-detail{
-          display: flex;
-          flex-direction: column;
-        }
-        
-        .title{
-            display: grid;
-            grid-template-columns: auto 1fr;
-            align-items: center;
-        }
-        .title figure img {
-            transform: rotate(180deg);
-            margin-right: 14px;
-        }
-        
-        .conten-order-car{
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-            width: 300px;
-        }
-        .orders{
-            display: grid;
-            grid-template-columns: auto 1fr auto;
-            margin-bottom: 12px;
-            gap: 34px;
-        }
+        aside{
+    position: absolute;
+   
+    right: 0;
+    top: 60px;
+    right: 10px;
+}
+.car{
+    height: 65vh;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--very-light-pink);
+    border-radius: 15px;
+}
+.product-detail{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 
-        .orders figure{
-           margin: 0;
-        }
+.title-car{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+.title-car figure img {
+    transform: rotate(180deg);
+    margin-right: 14px;
+}
 
-        .orders figure img{
-            width: 70px;
-            height: 70px;
-            border-radius: 20px;
-            object-fit: cover;
-        }
+.conten-order-car{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+}
+.orders{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-bottom: 12px;
+    gap: 34px;
+}
 
-        .orders p:nth-child(2){
-            font-size: var(--md) ;
-            font-weight: bold;
-            color: var(--very-light-pink);
-        }
-        .orders p:nth-child(3){
-            font-weight: bolder;
-            font-size: var(--md);
-        }
-        
-        .container-bottom{
-            text-align: center;
-        }
-        .btn-checkout{
-            width: 280px;
-            height: 50px;
-            border: none;
-            border-radius: 22px;  
-            background-color: var(--hospital-green);
-            cursor: pointer;
-            color: var(--white);  
-            font-size: var(--md);  
-            font-weight: bold;  
-            margin-left: 12px;    
-        }
-        
+.orders figure{
+   margin: 0;
+}
+
+.orders figure img{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.orders p:nth-child(2){
+    font-size: var(--md) ;
+    font-weight: bold;
+    color: var(--very-light-pink);
+}
+.orders p:nth-child(3){
+    font-weight: bolder;
+    font-size: var(--md);
+}
+
+.container-bottom{
+    text-align: center;
+}
+.btn-checkout{
+    width: 280px;
+    height: 50px;
+    border: none;
+    border-radius: 22px;  
+    background-color: var(--hospital-green);
+    cursor: pointer;
+    color: var(--white);  
+    font-size: var(--md);  
+    font-weight: bold;  
+    margin-left: 12px;    
+}
+@media(max-width:640px){
+    aside{
+    width: 100%;
+    height: 100vh;
+    position: inherit;
+
+   }
+   .car{
+    position: inherit;
+    border: none;
+    height: 100vh;
+   }
+   .product-detail{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+   
+}
+       
     </style>
 </head>
 <body>
     <aside >
         <div class="car">
         <div class="product-detail">
-            <div class="title">
+            <div class="title-car">
             <figure>
                 <img src="icons/flechita.svg" alt="">
             </figure>
@@ -140,6 +171,7 @@
                     <p>$30</p>
                 </div>
             </div>
+            
 
              </div>
              <div class="container-bottom">
