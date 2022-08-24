@@ -414,15 +414,16 @@ aside{
         height: 100%;
     }
    .car-product{
+    margin-top: 12px;
     width: 100%;
     height: 100vh;
     position: absolute;
-    
    }
    .car{
     position: inherit;
     border: none;
     height: 100vh;
+    width: 100%;
    }
    .product-detail{
     text-align: center;
