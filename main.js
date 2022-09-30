@@ -89,4 +89,5 @@ for(product of productList){
     productCar.appendChild(productInfo);
     carsConteiner.appendChild(productCar);
 
+    console.log("Hi GitHub");
 }
